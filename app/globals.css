@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply grid min-h-screen place-content-center bg-red bg-background-patter-mb md:bg-background-patter-dt;
+  }
+
+  input {
+    @apply w-full rounded-[5px] border border-[rgb(222,222,222)] py-[15px] pl-[20px] text-sm font-semibold leading-[26px] tracking-[0.25px] text-blue-dark placeholder:font-semibold placeholder:text-blue-dark placeholder:opacity-75 focus:outline-2 focus:outline-blue;
+  }
+}
